@@ -1,0 +1,31 @@
+{
+	"name" : "aidphp/template",
+	"type" : "library",
+	"description" : "PHP template engine",
+	"license" : "MIT",
+	"keywords" : [
+		"template",
+		"view"
+	],
+	"authors" : [{
+			"name" : "Maxime Bourmaut"
+		}
+	],
+	"require" : {
+		"php" : "^7.1.0",
+		"aidphp/template-interop" : "^1.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^7.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Aidphp\\Template\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Test\\Aidphp\\Template\\" : "test/"
+		}
+	}
+}
