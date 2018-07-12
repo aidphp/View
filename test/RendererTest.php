@@ -42,7 +42,7 @@ class RendererTest extends TestCase
         $renderer = new Renderer(self::PATH, $this->createMock(HelpersInterface::class));
         $content = $renderer->render('child');
 
-        $this->assertSame('Main View' . PHP_EOL . 'Child Block' . PHP_EOL . 'Child View', $content);
+        $this->assertSame('Main View Child Block Child View', $content);
     }
 
     public function testHelper()
